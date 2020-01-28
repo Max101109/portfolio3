@@ -162,8 +162,8 @@ header {
 
 .about-me-text {
     position: absolute;
-    width: 1100;
-    transform: translate(70%, 70%);
+    width: 1140px;
+    transform: translate(40%, 70%);
 }
 
 .about-me-text p {
@@ -183,7 +183,6 @@ header {
 .projects-showcase {
     list-style: none;
     width: 100%;
-    margin: 0 auto;
     padding-top: 40px;
 }
 

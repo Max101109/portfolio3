@@ -15,7 +15,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-/* Reusable styles */
+/* Reusable Styles */
 
 .row {
     max-width: 1140px;
@@ -39,41 +39,68 @@ h2 {
 h1 {
     margin-top: 0;
     color: #fff;
-    font-size: 240%;
+    font-size: 300%;
     word-spacing: 3px;
 }
 
-h2 {
-    font-size: 200%;
+.section-skills h2,
+.section-projects h2 {
+    font-size: 220%;
     word-spacing: 2px;
     text-align: center;
     font-weight: 400;
     color: rgb(41, 39, 39);
 }
 
-h2:after {
+.section-skills h2:after,
+.section-projects h2:after {
     display: block;
     height: 2px;
     background-color: #2980b9;
     content: " ";
-    width: 400px;
+    width: 250px;
     margin: 0 auto;
     margin-top: 20px;
 }
 
-/* Logos */
-
-.logo {
-    height: 60%;
-    width: 60%;
+.about-me-text h2 {
+    color: white;
+    font-size: 220%;
 }
 
-/* Buttons*/
+.about-me-text h2:after {
+    display: block;
+    height: 2px;
+    background-color: #2980b9;
+    content: " ";
+    width: 250px;
+    margin-top: 20px;
+}
+
+/* Logos/Skill Section */
+
+.section-skills {
+    background-color: rgb(230, 234, 236);
+}
+
+.logo {
+    height: 70%;
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.logo:hover {
+    transform: scale(1.25);
+}
+
+/* Buttons */
 
 .btn:link,
 .btn:visited {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 15px 50px;
+    font-size: 130%;
     font-weight: 400;
     text-decoration: none;
     border-radius: 50px;
@@ -123,4 +150,90 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-20%, -50%);
+}
+
+/* About Me */
+.section-about-me {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/divider2.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me-text {
+    position: absolute;
+    width: 1100;
+    transform: translate(70%, 70%);
+}
+
+.about-me-text p {
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 130%;
+}
+
+/* Projects */
+.section-projects {
+    background-color: rgb(218, 218, 218);
+}
+
+.projects-showcase {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+
+.projects-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.project-img {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.project-img img {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.project-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(168, 168, 168);
+    color: black;
+    padding: 60px;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social-links img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 30px;
+    left: 510px;
+}
+
+.copyright p {
+    position: relative;
+    top: 90px;
+    left: 340px;
 }
